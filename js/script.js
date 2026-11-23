@@ -16,7 +16,6 @@ $("#start").on("click", function () {
 
     console.log(availableMembers);
 
-
     //最近10名に入っていないメンバー（availableMembers）からランダムに選んだ番号を箱に入れる
     const randomNumber = Math.floor(Math.random() * availableMembers.length);
     //ランダムに選んだ番号から該当するmemberを指定して選ばれた人の箱（selectedPerson）に入れる
