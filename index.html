@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Talk Theme</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300,0,0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="titleArea">
+            <div>
+                <h2>デイリートークテーマ</h2>
+                <h1>Daily Talk Theme</h1>
+            </div>
+            <img src="assets/title-illustration.png" alt="今日話す人のイラスト">
+        </header>
+
+        <div class="label">今日話す人</div>
+        <div id="selectedMember" class="result"></div>
+
+        <div class="label">テーマ</div>
+        <div id="selectedTheme" class="result"></div>
+        <div class="buttongroup">
+            <button id="start" type="button">選ぶ</button>
+            <button id="end" type="button">決定</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>曜日</th>
+                    <th>話した人</th>
+                    <th>話した内容</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="calendar">
+            </tbody>
+        </table>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
