@@ -17,14 +17,21 @@
                 <h2>デイリートークテーマ</h2>
                 <h1>Daily Talk Theme</h1>
             </div>
-            <img src="assets/title-illustration.png" alt="今日話す人のイラスト">
+            <!-- <img src="assets/title-illustration.png" alt="今日話す人のイラスト"> -->
+            <video class="titleImage" autoplay muted loop playsinline aria-label="今日話す人のイラスト">
+                <source src="assets/girl-mouth.webm" type="video/webm">
+            </video>
         </header>
 
-        <div class="label">今日話す人</div>
-        <div id="selectedMember" class="result"></div>
+        <div class="selectionRow speakerRow">
+            <div class="label">今日話す人</div>
+            <div id="selectedMember" class="result"></div>
+        </div>
 
-        <div class="label">テーマ</div>
-        <div id="selectedTheme" class="result"></div>
+        <div class="selectionRow themeRow">
+            <div class="label">テーマ</div>
+            <div id="selectedTheme" class="result"></div>
+        </div>
         <div class="buttongroup">
             <button id="start" type="button">選ぶ</button>
             <button id="end" type="button">決定</button>
