@@ -11,32 +11,28 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 102px minmax(0, 1fr);
-    align-items: center;
-    gap: 18px 0;
     width: min(600px, calc(100% - 32px));
     margin: 72px auto;
 }
 
 .titleArea {
-    grid-column: 1 / -1;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     height: 120px;
+    margin-bottom: 8px;
 }
 
 .titleArea > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    margin-bottom: 10px;
 }
 
 .titleArea h1,
 .titleArea h2 {
-    margin: 0;
+    margin: 8px;
 }
 
 .titleArea h2 {
@@ -45,16 +41,36 @@ main {
 }
 
 .titleArea h1 {
-    font-size: 32px;
+    font-size: 38px;
     line-height: 1;
 }
 
-.titleArea img {
+/* .titleArea img {
     display: block;
-    width: 137px;
-    height: 120px;
+    width: 160px;
+    height: auto;
     object-fit: contain;
     flex-shrink: 0;
+} */
+.titleImage {
+    display: block;
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.selectionRow {
+    display: grid;
+    grid-template-columns: 102px minmax(0, 1fr);
+}
+
+.speakerRow {
+    margin-bottom: 18px;
+}
+
+.themeRow {
+    margin-bottom: 32px;
 }
 
 .label {
@@ -86,11 +102,10 @@ button {
 }
 
 .buttongroup {
-    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     gap: 32px;
-    margin-top: 14px;
+    margin-bottom: 24px;
 }
 
 #start,
@@ -123,9 +138,8 @@ button:hover {
 }
 
 table {
-    grid-column: 1 / -1;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 0;
     border-collapse: collapse;
     background: #fff;
     border-radius: 8px;
