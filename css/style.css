@@ -110,8 +110,8 @@ button {
 
 #start,
 #end {
-    width: 86px;
-    height: 86px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     color: #fff;
     font-size: 18px;
@@ -121,7 +121,7 @@ button {
 #start {
     background: #ffffff;
     color: #ce5265;
-    border: 2px solid #ce5265;
+    border: 3px solid #ce5265;
 }
 
 #start:hover {
